@@ -1,0 +1,27 @@
+.about {
+    background-color: $color-white;
+
+    &__header {
+        padding: 2rem 0;
+    }
+
+    &__images-grid {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2.5rem;
+        @include media('md') {
+            margin-bottom: 4rem;
+        }
+        img {
+            width: 33%;
+        }
+    }
+
+    &__lead {
+        max-width: 800px;
+        margin-bottom: 2.5rem;
+        @include media('md') {
+            margin-bottom: 4rem;
+        }
+    }
+}

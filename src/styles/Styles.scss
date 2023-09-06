@@ -1,1 +1,10 @@
-@import './Hero.scss';
+//setup
+@import 'Mixins';
+@import 'Colors';
+@import 'Fonts';
+@import 'Image';
+
+//components
+@import 'Hero';
+@import 'About';
+@import 'Products';

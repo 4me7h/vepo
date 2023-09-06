@@ -1,7 +1,60 @@
-import React from 'react'
+import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+import Card from './Cards';
+
+import image01 from '../images/img-02.jpg';
+import image02 from '../images/img-03.jpg';
+import image03 from '../images/img-04.jpg';
 
 export default function Products() {
   return (
-    <div>Products</div>
+    <div className="products">
+      <Container>
+        <Row>
+          <Col>
+            <div className="products__container">
+              <div className="products__header">
+                <h2 className="text--subtitle text-center">PRODUCTOS</h2>
+              </div>
+              <div className="products__content">
+                <p className="text--body">
+                  Descubre cómo Vepo puede transformar tu relación con la comida fresca y saludable. 
+                </p>
+                <p className="text--body">
+                  
+                  Ofrecemos una gama de soluciones hidropónicas diseñadas para adaptarse a tus necesidades y estilo de vida:
+                </p>
+                <ul className="products__list">
+                  <li className="products__item">
+                    <Card 
+                      image = {image02}
+                      name = "Cultivo en Casa"
+                      description = "Experimenta la alegría de cultivar tus propios vegetales en la comodidad de tu hogar."
+                    />
+                  </li>
+                  <li className="products__item">
+                  <Card 
+                      image = {image02}
+                      name = "Granja Urbana"
+                      description = "Participa en la revolución verde al unirte a nuestra red de granjas urbanas sostenibles."
+                    />
+                  </li>
+                  <li className="products__item">
+                  <Card 
+                      image = {image02}
+                      name = "Productos Frescos:"
+                      description = "Explora nuestra selección de productos hidropónicos frescos, cultivados con cuidado."
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </div>
   )
 }

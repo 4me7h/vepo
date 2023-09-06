@@ -1,26 +1,17 @@
-.hero {
-    &--img {
+.image {
+    &--background {
+        width: 100%;
+        height: 250px;
         position: relative;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
     }
-
     //overlays
     &__overlay {
         background-color: rgba(black, .5);
         width: 100%;
         height: 100%;
         position: absolute;
-    }
-
-    //hero contenidos
-    &__content {
-        position: relative;
-        text-align: center;
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 8rem 0;
-        color: white;
     }
 }
