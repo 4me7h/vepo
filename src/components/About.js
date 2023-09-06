@@ -31,7 +31,7 @@ export default function About() {
                 <img className="about__images-grid__item" alt="image1" src={image03}/>
                 <img className="about__images-grid__item" alt="image2" src={image04}/>
               </div>
-              <div className="about__lead">
+              <div className="about__content">
                 <p className="text--body">
                   Nuestro proyecto nace de la pasión por crear una conexión más cercana entre las personas y los alimentos que consumen.
                 </p>
@@ -41,7 +41,7 @@ export default function About() {
                 <img className="about__images-grid__item" alt="image1" src={image06}/>
                 <img className="about__images-grid__item" alt="image2" src={image07}/>
               </div>
-              <div className="about__lead">
+              <div className="about__content">
                 <p className="text--body">
                   A través de la <span className="lighted">innovación</span> y el compromiso con la calidad, estamos reinventando la <span className="lighted">agricultura</span> para las generaciones venideras.
                 </p>

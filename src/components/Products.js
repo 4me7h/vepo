@@ -5,9 +5,9 @@ import Col from 'react-bootstrap/Col';
 
 import Card from './Cards';
 
-import image01 from '../images/img-02.jpg';
-import image02 from '../images/img-03.jpg';
-import image03 from '../images/img-04.jpg';
+import image01 from '../images/img-08.jpg';
+import image02 from '../images/img-10.jpg';
+import image03 from '../images/img-09.jpg';
 
 export default function Products() {
   return (
@@ -17,7 +17,7 @@ export default function Products() {
           <Col>
             <div className="products__container">
               <div className="products__header">
-                <h2 className="text--subtitle text-center">PRODUCTOS</h2>
+                <h2 className="text--subtitle">Productos</h2>
               </div>
               <div className="products__content">
                 <p className="text--body">
@@ -30,22 +30,22 @@ export default function Products() {
                 <ul className="products__list">
                   <li className="products__item">
                     <Card 
-                      image = {image02}
-                      name = "Cultivo en Casa"
+                      image = {image01}
+                      name = "1. Cultivo en Casa"
                       description = "Experimenta la alegría de cultivar tus propios vegetales en la comodidad de tu hogar."
                     />
                   </li>
                   <li className="products__item">
                   <Card 
                       image = {image02}
-                      name = "Granja Urbana"
+                      name = "2. Granja Urbana"
                       description = "Participa en la revolución verde al unirte a nuestra red de granjas urbanas sostenibles."
                     />
                   </li>
                   <li className="products__item">
                   <Card 
-                      image = {image02}
-                      name = "Productos Frescos:"
+                      image = {image03}
+                      name = "3. Productos Frescos"
                       description = "Explora nuestra selección de productos hidropónicos frescos, cultivados con cuidado."
                     />
                   </li>
