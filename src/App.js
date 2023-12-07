@@ -5,12 +5,14 @@ import About from './components/About';
 import Products from './components/Products';
 import Hero from './components/Hero';
 import Team from './components/Team';
+import Micro from './components/Micro';
 
 function App() {
   return (
     <div>
       {/* <Header /> */}
       <Hero />
+      <Micro />
       <About />
       <Products />
       <Team />
