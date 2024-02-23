@@ -11,7 +11,7 @@ const Team = () => {
                     <Col>
                         <div className="team__container">
                             <div className="team__header">
-                                <h2 className="text--subtitle">Team</h2>
+                                <h2 className="text--subtitle">Nosotros</h2>
                             </div>
                             <div className="team__content">
                                 <p className="text--body">

@@ -75,6 +75,9 @@ $fw-8: 800;
             font-size: $fs-lg;
         }
         @include media('md') {
+            font-size: $fs-xl;
+        }  
+        @include media('xl') {
             font-size: $fs-bg;
         }
     }
@@ -94,6 +97,18 @@ $fw-8: 800;
         font-size: $fs-sm;
         @include media('md') {
             font-size: $fs-md;
+        }
+    }
+}
+
+.list {
+
+    &--body {
+        li {
+            font-size: $fs-sm;
+            @include media('md') {
+                font-size: $fs-md;
+            }
         }
     }
 }
