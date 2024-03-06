@@ -7,15 +7,27 @@ import Hero from './components/Hero';
 import Team from './components/Team';
 import Micro from './components/Micro';
 
+import { Element } from 'react-scroll';
+
 function App() {
   return (
     <div>
-      {/* <Header /> */}
-      <Hero />
-      <Micro />
-      <About />
-      <Products />
-      <Team />
+      <Header />
+      <Element name="hero">
+        <Hero />
+      </Element>
+      <Element name="micro">
+        <Micro />
+      </Element>
+      <Element name="about">
+        <About />
+      </Element>
+      <Element name="products">
+        <Products />
+      </Element>
+      <Element name="team">
+        <Team />
+      </Element>
       <Footer />
     </div>
   );

@@ -9,6 +9,8 @@ import image01 from '../images/img-08.jpg';
 import image02 from '../images/img-10.jpg';
 import image03 from '../images/img-09.jpg';
 
+import { Fade } from 'react-awesome-reveal';
+
 export default function Products() {
   return (
     <div className="products">
@@ -16,17 +18,21 @@ export default function Products() {
         <Row>
           <Col>
             <div className="products__container">
+              <Fade direction="down" triggerOnce>
               <div className="products__header">
                 <h2 className="text--subtitle">Productos</h2>
               </div>
+              </Fade>
               <div className="products__content">
+                <Fade direction='right' triggerOnce>
                 <p className="text--body">
                   Descubre cómo Vepo puede transformar tu relación con la comida fresca y saludable. 
                 </p>
-                <p className="text--body">
-                  
+                <p className="text--body">  
                   Ofrecemos una gama de soluciones hidropónicas diseñadas para adaptarse a tus necesidades y estilo de vida:
                 </p>
+                </Fade>
+                <Fade cascade triggerOnce>
                 <ul className="products__list">
                   <li className="products__item">
                     <Card 
@@ -50,6 +56,7 @@ export default function Products() {
                     />
                   </li>
                 </ul>
+                </Fade>
               </div>
             </div>
           </Col>

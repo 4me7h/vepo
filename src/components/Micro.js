@@ -3,14 +3,14 @@ import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
 
-import Banner from "./Banner";
-
 import img01 from "../images/vepo-micro-01.jpg";
 import img02 from "../images/vepo-micro-02.jpg";
 import img03 from "../images/vepo-micro-03.jpg";
 import img04 from "../images/vepo-micro-04.jpg";
 import img05 from "../images/vepo-micro-05.jpg";
 import img06 from "../images/vepo-micro-06.jpg";
+
+import { Fade, Bounce } from 'react-awesome-reveal';
 
 const Micro = () => {
     return (
@@ -19,12 +19,17 @@ const Micro = () => {
                 <Row>
                     <Col>
                         <div className="micro__container">
+                            
                             <div className="micro__header">
+                                <Fade direction="left" triggerOnce>
                                 <h3 className="text--subtitle">
                                     Microgerminados
                                 </h3>
+                                </Fade> 
                             </div>
+                            
                             <div className="micro__content">
+                                <Fade cascade triggerOnce>
                                 <div className="micro__lead">
                                     <p className="text--lead">
                                         <strong>Lo más nuevo,</strong> dale ese toque dulce a tus mejores platillos con el nuevo microgen de melón.
@@ -45,6 +50,8 @@ const Micro = () => {
                                         <img className="micro__content__img" src={img03} alt="microgerminados pic" />
                                     </li>
                                 </ul>
+                                </Fade>
+                                <Fade cascade triggerOnce direction="right">
                                 <div className="micro__benefits">
                                     <h4 class="text--lead">Beneficios de los Microgerminados</h4>
                                     <p className="text--body">
@@ -75,7 +82,8 @@ const Micro = () => {
                                         Vepo, donde tú eres nuestra prioridad.
                                     </p>
                                 </div>
-                                
+                                </Fade>  
+                                <Fade cascade triggerOnce>
                                 <ul className="micro__grid">
                                     <li className="micro__grid__item">
                                         <img className="micro__grid__img" src={img01} alt="microgerminados pic" />
@@ -90,7 +98,9 @@ const Micro = () => {
                                         <img className="micro__grid__img" src={img04} alt="microgerminados pic" />
                                     </li>
                                 </ul>
+                                </Fade>
                             </div>
+                            
                         </div>
                     </Col>
                 </Row>
