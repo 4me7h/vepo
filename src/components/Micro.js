@@ -23,7 +23,7 @@ const Micro = () => {
                             <div className="micro__header">
                                 <Fade direction="left" triggerOnce>
                                 <h3 className="text--subtitle">
-                                    Microgerminados
+                                    Micro Germinados
                                 </h3>
                                 </Fade> 
                             </div>
